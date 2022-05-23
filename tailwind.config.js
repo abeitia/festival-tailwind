@@ -5,7 +5,7 @@ module.exports = {
   content: ['./src/**/*.{html,js}'],
   theme: {
     extend: {
-    colors: {'chokolate': '#8a3324', 'cyan-600': '#fefe33'
+    colors: {'chokolate': '#8a3324', 'cyan-600': '#fefe33', 'verde': '#84ff84', 'violeta':'#6b1882'
              
             },
 fontFamily : {
