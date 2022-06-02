@@ -1,145 +1,141 @@
-<header>
-    <!-- <div id="navbarSupportedContent">
-                <ul>
-                    <li>
-                        <a href="bandas.html">Bandas</a>
-                    </li>
+<!-- This example requires Tailwind CSS v2.0+ -->
+<nav class="bg-light sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+        <div class="relative flex items-center justify-between h-16">
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                <!-- Mobile menu button-->
+                <button
+                    type="button"
+                    class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                    aria-controls="mobile-menu"
+                    aria-expanded="false"
+                >
+                    <span class="sr-only">Open main menu</span>
+                    <!--
+            Icon when menu is closed.
 
-                    <li>
-                        <a href="contacto.html">Contacto</a>
-                    </li>
-                </ul>
-            </div> -->
+            Heroicon name: outline/menu
 
-    <!-- <div class="grid md:grid-cols-3">
-        <div class="md:col-span-1 md:flex md:justify-end">
-            <nav class="text-right">
-                <div class="flex justify-between items-center">
-                    <h1
-                        class="font-bold uppercase p-4 border-b border-gray-100"
+            Menu open: "hidden", Menu closed: "block"
+          -->
+                    <svg
+                        class="block h-6 w-6"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke="currentColor"
+                        aria-hidden="true"
                     >
-                        <a href="/" class="hover:text-gray-700">Food Ninja</a>
-                    </h1>
-                    <div class="px-4 cursor-pointer md:hidden" id="burger">
-                        <svg
-                            class="w-6 h-6"
-                            fill="none"
+                        <path
                             stroke-linecap="round"
                             stroke-linejoin="round"
-                            stroke-width="2"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                        >
-                            <path d="M4 6h16M4 12h16M4 18h16"></path>
-                        </svg>
-                    </div>
-                </div>
+                            d="M4 6h16M4 12h16M4 18h16"
+                        />
+                    </svg>
+                    <!--
+            Icon when menu is open.
 
-                <ul class="text-sm mt-6 hidden md:inline" id="menu">
-                    <li class="text-gray-700 font-bold py-1">
+            Heroicon name: outline/x
+
+            Menu open: "block", Menu closed: "hidden"
+          -->
+                    <svg
+                        class="hidden h-6 w-6"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M6 18L18 6M6 6l12 12"
+                        />
+                    </svg>
+                </button>
+            </div>
+            <div
+                class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start"
+            >
+                <div class="flex-shrink-0 flex items-center">
+                    <img
+                        class="block lg:hidden h-8 w-auto"
+                        src="./assets/images/logo7.png"
+                        alt="Workflow"
+                    />
+                    <img
+                        class="hidden lg:block h-8 w-auto"
+                        src="./assets/images/logo7.png"
+                        alt="Workflow"
+                    />
+                    <span class="font-semibold text-xl tracking-tight"
+                        >Festival de Mayo</span
+                    >
+                </div>
+                <div class="hidden sm:block sm:ml-6">
+                    <div class="flex space-x-4">
+                        <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                         <a
                             href="./index.html"
-                            class="px-4 flex justify-end border-r-4 border-primary"
+                            class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium"
+                            aria-current="page"
+                            >Inicio</a
                         >
-                            <span>Home</span>
-                            <svg
-                                class="w-5 ml-2"
-                                fill="none"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                stroke="currentColor"
-                                viewBox="0 0 24 24"
-                            >
-                                <path
-                                    d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
-                                ></path>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="py-1">
+
                         <a
                             href="./bandas.html"
-                            class="px-4 flex justify-end border-r-4 border-white"
+                            class="text-gray-700 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                            >Bandas</a
                         >
-                            <span>Bandas</span>
-                            <svg
-                                class="w-5 ml-2"
-                                fill="none"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                stroke="currentColor"
-                                viewBox="0 0 24 24"
-                            >
-                                <path
-                                    d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
-                                ></path>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="py-1">
+
+                        <a
+                            href="#"
+                            class="text-gray-700 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                            >Artículo</a
+                        >
+
                         <a
                             href="./contacto.html"
-                            class="px-4 flex justify-end border-r-4 border-white"
+                            class="text-gray-700 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                            >Contacto</a
                         >
-                            <span>Contact</span>
-                            <svg
-                                class="w-5 ml-2"
-                                fill="none"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                stroke="currentColor"
-                                viewBox="0 0 24 24"
-                            >
-                                <path
-                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                                ></path>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </div> -->
-    <nav class="bg-gray-100 relative inset-x-0">
-        <!-- <nav class="bg-gray-100  fixed"> -->
-        <div class="container mx-auto flex px-8 xl:px-0">
-            <!-- <div class="flex flex-row flex-grow items-center"> -->
-            <div>
-                <!-- <img src="assets/images/logo7.png" class="w-6" alt="" /> -->
-                <a href="./index.html" class="flex items-center py-5 px-2 text-gray-700 hover:text-gray-900">
-                    <img src="assets/images/logo7.png" class="w-6" alt="" />
-                    <span class="font-bold"> Festival de mayo</span>
-                </a>
-            </div>
-
-            <div id="burger" class="flex lg:hidden px-4 cursor-pointer">
-                <img src="assets/images/menu.png" alt="" />
-            </div>
-
-            <div
-                id="menu"
-                class="lg:flex hidden flex-grow justify-end absolute lg:relative lg:top-0 top-20 left-0 bg-gray-100 w-full lg:w-auto items-center py-14 lg:py-0 px-8 sm:px-24 lg:px-0"
-            >
-                <div class="flex flex-col lg:flex-row">
-                    <a
-                        href="./index.html"
-                        class="text-black lg:mr-7 mb-8 lg:mb-0"
-                        >Inicio</a
-                    >
-                    <a
-                        href="./bandas.html"
-                        class="text-black lg:mr-7 mb-8 lg:mb-0"
-                        >Bandas</a
-                    >
-                    <a href="#" class="text-black lg:mr-7 mb-8 lg:mb-0"
-                        >Artículo</a
-                    >
-                    <a href="./contacto.html" class="text-black">Contacto</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </nav>
-</header>
+    </div>
+
+    <!-- Mobile menu, show/hide based on menu state. -->
+    <div class="sm:hidden" id="mobile-menu">
+        <div class="px-2 pt-2 pb-3 space-y-1">
+            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+            <a
+                href="./index.html"
+                class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
+                aria-current="page"
+                >Inicio</a
+            >
+
+            <a
+                href="./bandas.html"
+                class="text-gray-700 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                >Bandas</a
+            >
+
+            <a
+                href="#"
+                class="text-gray-700 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                >Artículo</a
+            >
+
+            <a
+                href="./contacto.html"
+                class="text-gray-700 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                >Contacto</a
+            >
+        </div>
+    </div>
+</nav>

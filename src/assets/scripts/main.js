@@ -10,18 +10,27 @@
  * Write any other JavaScript below
  */
 
-+( function() {
++(function () {
   const university = "UOC";
   console.log(`Hello, ${university}!`);
-} )();
+})();
 
-const burger = document.querySelector('#burger');
-const menu = document.querySelector('#menu');
+//  function Menu(e){
+//       let list = document.querySelector('ul');
+//       e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
+//     }
 
-burger.addEventListener('click', (e) => {
-  if (menu.classList.contains('hidden')) {
-    menu.classList.remove('hidden');
-  } else {
-    menu.classList.add('hidden');
-  }
+const burger = document.querySelector("#burger");
+const menu = document.querySelector("#menu");
+
+// burger.addEventListener('click', (e) => {
+//   if (menu.classList.contains('hidden')) {
+//     menu.classList.remove('hidden');
+//   } else {
+//     menu.classList.add('hidden');
+//   }
+// });
+
+burger.addEventListener("click", () => {
+  menu.classList.toggle("hidden");
 });

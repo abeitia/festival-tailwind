@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 
 <html lang="es">
-
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width" />
@@ -12,101 +11,108 @@
         />
         <!-- do not remove this line! -->
         <title>Festival de Mayo</title>
-        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
     </head>
-    <body>
-        
-            
-        
-           <!-- <include src="./views/header.html"></include> -->
-<!-- navbar goes here -->
-<nav class="bg-gray-100 fixed inset-x-0">
-    <div class="max-w-6xl mx-auto px-4">
-        <div class="flex justify-between">
-            <div class="flex space-x-4">
-                <!-- logo -->
-                <div>
- <a href="#" class="flex items-center py-5 px-2 text-gray-700 hover:text-gray-900">
-<img
-                        src="assets/images/logo7.png"
-                        class="w-6"
-                        alt=""
-                    />
- <!-- <i class='bx bxl-medium-old mr-1 text-xl mb-1 text-blue-400'></i>  -->
-<span class="font-bold">Moto Dev</span> </a> </div> 
+    <body class="bg-verde text-violeta">
+        <include src="./views/header5.html"></include>
 
-<!-- primary nav -->
-                <div class="hidden md:flex items-center space-x-1"> <a href="#" class="py-5 px-3 text-gray-700 hover:text-gray-900">Home</a> <a href="#" class="py-5 px-3 text-gray-700 hover:text-gray-900">Contact</a> <a href="#" class="py-5 px-3 text-gray-700 hover:text-gray-900">Pricing</a> <a href="#" class="py-5 px-3 text-gray-700 hover:text-gray-900">Features</a> </div>
-            </div>
+        <main class="px-8">
+            <h1
+                class="bg-white box-border h-10 leading-tight font-medium mb-2 mt-3 text-center xl:text-4xl rounded-3xl"
+            >
+                Contacto
+            </h1>
 
- <!-- secondary nav -->
-            <div class="hidden md:flex items-center space-x-1"> <a href="" class="py-5 px-3">Login</a> <a href="" class="py-2 px-3 bg-yellow-400 text-white hover:bg-yellow-300 text-sm hover:text-yellow-800 rounded transition duration-300">Signup</a> </div> <!-- mobile button goes here -->
-            <div class="md:hidden flex items-center"> <button class="mobile-menu-button focus:outline-none">
-                     <i class='bx bx-menu text-3xl mt-1'></i> </button> </div>
-        </div>
-    </div>
+            <section
+                class="max-w-4xl p-6 mx-auto rounded-md shadow-md"
+            >
+                <h2
+                    class="text-lg font-semibold text-gray-700  dark:text-white"
+                >
+                    Su dirección
+                </h2>
 
- <!-- mobile menu -->
-    <div class="mobile-menu hidden md:hidden"> <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-200">Home</a> <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-200">Contact</a> <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-200">Pricing</a> <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-200">Features</a> </div>
-</nav>
-   <h1 class="maintitle">Contacto</h1>
-     
-        <main>
-              <section>
-                <div class="container  d-flex justify-content-center">
-                    <div >
-                        <h4 >Su dirección</h4>
+                <form>
+                    <div class="grid grid-cols-1 gap-6 mt-4 sm:grid-cols-2">
+                        <div>
+                            <label
+                                class="text-gray-700 dark:text-gray-200"
+                                for="firstName"
+                                >Nombre</label
+                            >
+                            <input
+                                id="firstName"
+                                type="text"
+                                placeholder="Escriba su nombre"
+                                class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
+                            />
+                        </div>
 
-                        <form class="needs-validation"
-                         name="contact"
-                         action="#"
-                         method="post"
-                         novalidate
-                         netlify
-                         data-netlify-recaptcha="true">
+                        <div>
+                            <label
+                                class="text-gray-700 dark:text-gray-200"
+                                for="lastName"
+                                >Apellidos</label
+                            >
+                            <input
+                                id="lastName"
+                                type="text"
+                                placeholder="Escriba sus apellidos"
+                                class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
+                            />
+                        </div>
 
-                            <fieldset >
-                                <div >
-                                    <div >
-                                        <label for="firstName">Nombre</label>
-                                        <input type="text"  id="firstName" placeholder="Escriba su nombre">
-                                    </ddiv>
-                                    <div >
-                                        <label for="lastName">Apellidos</label>
-                                        <input type="text"  id="lastName" placeholder="Escriba sus apellidos">
-                                    </div>
-                                </div>
-        
-                                <div >
-                                
-                                
-                                <div >
-                                    <label for="email">Email</label>
-                                    <div >
-                                        <div >
-                                            <span >@</span>
-                                        </div>
-                                        <input type="text"  id="email" placeholder="Email" >
-                                    </div>
-                                </div>
-        
-                                    <div >
-                                        <label for="telefono">Teléfono</span></label>
-                                        <input type="tel"  id="telefono" placeholder="Teléfono" >
-                                    </div>
-        
-                                </div>
-        
-                            
-        
-                                <div >
-                                    <label for="address">Dirección</label>
-                                    <input type="text"  id="address"  >
-                                </div>
-        
-                                <div >
-                                
-                                    <div >
+                        <div>
+                            <label
+                                class="text-gray-700 dark:text-gray-200"
+                                for="email"
+                                >Email</label
+                            >
+                            <div class="flex">
+                            <span class="inline-flex items-center px-3 py-2 mt-2 text-sm text-gray-900 bg-gray-200 border border-r-0 border-gray-300 rounded-l-md dark:bg-gray-600 dark:text-gray-400 dark:border-gray-600">
+                            @
+                            </span>
+                                <input
+                                id="email"
+                                type="email"
+                                placeholder="Email"
+                                class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
+                            />
+</div>
+                       
+                        </div>
+
+                        <div>
+                            <label
+                                class="text-gray-700 dark:text-gray-200"
+                                for="telefono"
+                                >Teléfono</label
+                            >
+                            <input
+                                id="telefono"
+                                type="tel"
+                                placeholder="Teléfono"
+                                class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
+                            />
+                        </div>
+
+                 
+
+                        <div class="lg:col-span-2">
+                            <label
+                                class="text-gray-700 dark:text-gray-200"
+                                for="address"
+                                >Dirección</label
+                            >
+                            <input
+                                id="address"
+                                type="text"
+                                placeholder="Dirección"
+                                class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
+                            />
+                        </div>
+
+                        <div class="mb-4 max-w-full w-full md:flex-none" >
                                         <label for="provincia">Provincia</label>
                                         <select  id="provincia" class="w-full border-gray-300 rounded-lg shadow-sm focus:border-indigo-500 focus:ring-indigo-500;" >
                                             <option value="">Seleccione su provincia</option>
@@ -123,7 +129,132 @@
                                         </select>
                                     </div>
         
+                        <div class="mb-4 max-w-full w-full md:flex-none">
+                            <label for="city">Ciudad</span></label>
+                            <input type="text" class="w-full border-gray-300 rounded-lg shadow-sm focus:border-indigo-500 focus:ring-indigo-500;" id="city" placeholder="Ciudad" >
+                        </div>
+
+                        <div class="lg:col-span-2" >
+                                   
+                                <label class="text-gray-700 dark:text-gray-200" for="remarks">Comentarios</label>
+                                <textarea class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"  id="remarks" rows="3" placeholder="Comentarios"></textarea>
+                           
+                                   
+                        </div>
+        
+                                <div >
                                     <div >
+                                        <input type="checkbox"  id="politica">
+                                        <label  for="politica">He leído y acepto la <a href="">política de privacidad</a></label>
+                                    </div>
+                                
+                                </div>
+
+                                <div data-netlify-recaptcha="true"></div>
+                                <!-- <button type="submit">Enviar</button> -->
+                                <div class="mt-4">
+                                    <button
+                                        type="submit"
+                                        class="inline-flex items-center justify-center w-full px-5 py-3 text-white bg-gray-700 rounded-lg sm:w-auto"
+                                    >
+                                        <span class="font-medium">
+                                            Enviar
+                                        </span>
+
+                                        
+                                    </button>
+                                </div>
+
+                   
+
+                 
+
+
+                    </div>
+
+                    <div class="flex justify-end mt-6">
+                        <button
+                            class="px-6 py-2 leading-5 text-white transition-colors duration-200 transform bg-gray-700 rounded-md hover:bg-gray-600 focus:outline-none focus:bg-gray-600"
+                        >
+                            Save
+                        </button>
+                    </div>
+                </form>
+            </section>
+
+<!-- OLD -->
+            <!-- <section>
+                <div class="w-full mx-auto  flex justify-center">
+                    <div >
+                        <h4 class="font-medium mt-0 mb-2 text-lg xl:text-2xl">Su dirección</h4>
+
+                        <form class="needs-validation"
+                         name="contact"
+                         action="#"
+                         method="post"
+                         novalidate
+                         netlify
+                         data-netlify-recaptcha="true">
+
+                            <fieldset class="border-0 m-0 min-w-0 p-0" >
+                                <div class="flex flex-wrap" >
+                                    <div class="mb-4 max-w-full w-full md:flex-none" >
+                                        <label for="firstName">Nombre</label>
+                                        <input type="text"  id="firstName" placeholder="Escriba su nombre">
+                                    </div>
+                                    <div class="mb-4 max-w-full w-full md:flex-none">
+                                        <label for="lastName">Apellidos</label>
+                                        <input type="text"  id="lastName" placeholder="Escriba sus apellidos">
+                                    </div>
+                                </div>
+        
+                                <div class="flex flex-wrap" >
+                                
+                                
+                                <div class="mb-4 max-w-full w-full md:flex-none">
+                                    <label for="email">Email</label>
+                                    <div >
+                                        <div >
+                                            <span >@</span>
+                                        </div>
+                                        <input type="text"  id="email" placeholder="Email" >
+                                    </div>
+                                </div>
+        
+                                    <div class="mb-4 max-w-full w-full md:flex-none">
+                                        <label for="telefono">Teléfono</span></label>
+                                        <input type="tel"  id="telefono" placeholder="Teléfono" >
+                                    </div>
+        
+                                </div>
+        
+                            
+        
+                                <div class="mb-4" >
+                                    <label for="address">Dirección</label>
+                                    <input type="text"  id="address"  >
+                                </div>
+        
+                                <div  class="flex flex-wrap">
+                                
+                                    <div class="mb-4 max-w-full w-full md:flex-none" >
+                                        <label for="provincia">Provincia</label>
+                                        <select  id="provincia" class="w-full border-gray-300 rounded-lg shadow-sm focus:border-indigo-500 focus:ring-indigo-500;" >
+                                            <option value="">Seleccione su provincia</option>
+                                            <option>Bocas del Toro</option>
+                                            <option>Coclé   </option>
+                                            <option>Colón</option>
+                                            <option>Chiriquí</option>
+                                            <option>Darién</option>
+                                            <option>Herrera</option>
+                                            <option>Los Santos</option>
+                                            <option>Panamá</option>
+                                            <option>Veraguas</option>
+                                            <option>Panamá Oeste</option>
+                                        </select>
+                                    </div>
+        
+                                    <div class="mb-4 max-w-full w-full md:flex-none">
                                         <label for="city">Ciudad</span></label>
                                         <input type="text" class="w-full border-gray-300 rounded-lg shadow-sm focus:border-indigo-500 focus:ring-indigo-500;" id="city" placeholder="Ciudad" >
                                     </div>
@@ -133,7 +264,7 @@
         
                                 
         
-                                <div >
+                                <div class="mb-4" >
                                     <div >
                                         <label for="remarks">Comentarios</label>
                                         <textarea  id="remarks" rows="3"></textarea>
@@ -147,191 +278,148 @@
                                     </div>
                                 
                                 </div>
+
                                 <div data-netlify-recaptcha="true"></div>
                                 <button type="submit">Enviar</button>
                                 
                             </fieldset>
                     
-                    </form>
+                        </form>
                 
                 </div>
                 </div>
-              </section>
-        </main>
-     
-        <footer class="bg-dark text-white pt-5 pb-4">
-                <div class="container text-center text-md-left">
-                    <div class="row text-center text-md-left">
-                        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                            <h5
-                                class="text-uppercase mb-4 font-weight-bold text-warning"
-                            >
-                                Acerca de
-                            </h5>
-                            <p>
-                                El Festival de Mayo se realiza todos los años durante la última semana de dicho mes con el fin de promocionar a los artistas locales.
-                            </p>
-                        </div>
+              </section> -->
 
-                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                            <h5
-                                class="text-uppercase mb-4 font-weight-bold text-warning"
+            <!-- bloque - 3 TailwindLabs         -->
+            <!-- <section>
+                <div
+                    class="min-h-screen bg-gray-100 flex flex-col justify-center py-12 px-6 lg:px-8"
+                >
+                    <div class="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
+                        <div
+                            class="bg-white py-8 px-6 shadow rounded-lg sm:px-10"
+                        >
+                            <form
+                                class="mb-0 space-y-6"
+                                action="#"
+                                method="POST"
                             >
-                                Atracciones
-                            </h5>
-                            <p>
-                                <a
-                                    href="#"
-                                    class="text-white"
-                                    style="text-decoration: none"
-                                >
-                                    Bandas de rock</a
-                                >
-                            </p>
-                            <p>
-                                <a
-                                    href="#"
-                                    class="text-white"
-                                    style="text-decoration: none"
-                                >
-                                    Música tropical</a
-                                >
-                            </p>
-                            <p>
-                                <a
-                                    href="#"
-                                    class="text-white"
-                                    style="text-decoration: none"
-                                >
-                                    Música folclórica</a
-                                >
-                            </p>
-                            <p>
-                                <a
-                                    href="#"
-                                    class="text-white"
-                                    style="text-decoration: none"
-                                >
-                                    Grupos de reggaeton</a
-                                >
-                            </p>
-                        </div>
+                                <div>
+                                    <label
+                                        for="email"
+                                        class="block text-sm font-medium text-gray-700"
+                                        >Email address</label
+                                    >
+                                    <div class="mt-1">
+                                        <input
+                                            id="email"
+                                            name="email"
+                                            type="email"
+                                            autocomplete="email"
+                                            required
+                                            class=""
+                                        />
+                                    </div>
+                                </div>
 
-                     
-                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                            <h5
-                                class="text-uppercase mb-4 font-weight-bold text-warning"
-                            >
-                                Contacto
-                            </h5>
-                            <p>
-                                <i class="fas fa-home mr-3"></i>Bella Vista, Panamá
-                                Calle 43, Panamá
-                            </p>
-                            <p>
-                                <i class="fas fa-envelope mr-3"></i
-                                >festival-mayo@gmail.com
-                            </p>
-                            <p>
-                                <i class="fas fa-phone mr-3"></i>+507 393 0105
-                            </p>
-                            <!-- <p>
-                                <i class="fas fa-print mr-3"></i>+01 335 633 77
-                            </p> -->
+                                <div>
+                                    <label
+                                        for="password"
+                                        class="block text-sm font-medium text-gray-700"
+                                        >Password</label
+                                    >
+                                    <div class="mt-1">
+                                        <input
+                                            id="password"
+                                            name="password"
+                                            type="password"
+                                            autocomplete="current-password"
+                                            required
+                                            class=""
+                                        />
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label
+                                        for="company-size"
+                                        class="block text-sm font-medium text-gray-700"
+                                        >Company size</label
+                                    >
+                                    <div class="mt-1">
+                                        <select
+                                            name="company-size"
+                                            id="company-size"
+                                            class=""
+                                        >
+                                            <option value="">
+                                                Please select
+                                            </option>
+                                            <option value="small">
+                                                1 to 10 employees
+                                            </option>
+                                            <option value="medium">
+                                                11 to 50 employees
+                                            </option>
+                                            <option value="large">
+                                                50+ employees
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-center">
+                                    <input
+                                        id="terms-and-privacy"
+                                        name="terms-and-privacy"
+                                        type="checkbox"
+                                        class=""
+                                    />
+                                    <label
+                                        for="terms-and-privacy"
+                                        class="ml-2 block text-sm text-gray-900"
+                                        >I agree to the
+                                        <a
+                                            href="#"
+                                            class="text-indigo-600 hover:text-indigo-500"
+                                            >Terms</a
+                                        >
+                                        and
+                                        <a
+                                            href="#"
+                                            class="text-indigo-600 hover:text-indigo-500"
+                                            >Privacy Policy</a
+                                        >.
+                                    </label>
+                                </div>
+
+                                <div>
+                                    <button
+                                        type="submit"
+                                        class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                    >
+                                        Sign up
+                                    </button>
+                                </div>
+                            </form>
                         </div>
                     </div>
-
-                    <hr class="mb-4" />
-
-                     <div class="smenu" >
-                    <a class="text-decoration-none link-accent"  href="index.html">
-                      <img src="./assets/images/logo7.png" width="32" height="32" title="Logo del Festival de Mayo" alt="Logo">
-                      Festival de mayo
-                    </a>
-                    
-                      <ul >
-                        <!-- <li class="smenu__item">
-                          <a class="text-decoration-none link-accent" href="index.html">Inicio</a>
-                        </li>
-                        <li class="smenu__item">
-                          <a class="text-decoration-none link-accent" href="bandas.html">Bandas</a>
-                        </li>
-                        <li class="smenu__item">
-                          <a class="text-decoration-none link-accent" href="articulo.html">Artículo</a>
-                        </li>
-                        <li class="smenu__item">
-                          <a class="text-decoration-none link-accent" href="contacto.html">Contacto</a>
-                        </li> -->
-                       
-                        
-                      </ul>
-                        <div >
-                                <ul class="list-unstyled list-inline">
-                                    <li class="list-inline-item">
-                                        <a
-                                            href="#"
-                                            class="btn-floating btn-sm text-white"
-                                            style="font-size: 23px"
-                                            ><i class="fab fa-facebook"></i
-                                        ></a>
-                                    </li>
-                                    <li class="list-inline-item">
-                                        <a
-                                            href="#"
-                                            class="btn-floating btn-sm text-white"
-                                            style="font-size: 23px"
-                                            ><i class="fab fa-twitter"></i
-                                        ></a>
-                                    </li>
-                                    <li class="list-inline-item">
-                                        <a
-                                            href="#"
-                                            class="btn-floating btn-sm text-white"
-                                            style="font-size: 23px"
-                                            ><i class="fab fa-google-plus"></i
-                                        ></a>
-                                    </li>
-                                    <li class="list-inline-item">
-                                        <a
-                                            href="#"
-                                            class="btn-floating btn-sm text-white"
-                                            style="font-size: 23px"
-                                            ><i class="fab fa-linkedin-in"></i
-                                        ></a>
-                                    </li>
-                                    <li class="list-inline-item">
-                                        <a
-                                            href="#"
-                                            class="btn-floating btn-sm text-white"
-                                            style="font-size: 23px"
-                                            ><i class="fab fa-youtube"></i
-                                        ></a>
-                                    </li>
-                                </ul>
-                            </div>
                 </div>
+            </section> -->
 
-                    <hr class="mb-4" />
-                    <div class="row align-items-center">
-                        <div class="col-md-7 col-lg-8">
-                            <p>
-                               <strong class="text-warning">2022 &copy;</strong>
-        Agustín Beitía C - Herramientas <abbr title="HyperText Markup Language" lang="en">HTML</abbr> y <abbr
-            title="Cascading Style Sheets" lang="en">CSS</abbr> II.
-                                
-                            </p>
-                        </div>
-
-                      
-                    </div>
-                </div>
-        </footer> 
-         
-
-        <!-- <include src="./views/footer.html"></include> -->
         
+
+
+
+ 
+
+
+        </main>
+
+        <include src="./views/footer.html"></include>
+
         <script type="module" src="./assets/scripts/main.js"></script>
-       
+
         <!-- do not remove this line! -->
     </body>
 </html>
