@@ -13,7 +13,7 @@
         <title>Festival de Mayo</title>
         <link rel="icon" type="image/x-icon" href="favicon.ico" />
     </head>
-    <body class="bg-verde text-primary">
+    <body class="bg-brand text-primary">
         <include src="./views/header5.html"></include>
 
         <main class="px-8">
@@ -32,7 +32,13 @@
                     Su dirección
                 </h2>
 
-                <form>
+                <form class="needs-validation"
+                         name="contact"
+                         action="#"
+                         method="post"
+                         novalidate
+                         netlify
+                         data-netlify-recaptcha="true">
                     <div class="grid grid-cols-1 gap-6 mt-4 md:grid-cols-2">
                         <div>
                             <label
@@ -94,7 +100,7 @@
 
                  
 
-                        <div class="lg:col-span-2">
+                        <div class="md:col-span-2">
                             <label
                                for="address"
                                 >Dirección</label
@@ -112,7 +118,7 @@
                                         <select  id="provincia" class="w-full text-dark bg-white border border-[#ced4da]  rounded-tl-md shadow-sm  focus:border-[#86b7fe] focus:ring-[#86b7fe] focus:outline-none focus:ring " >
                                             <option value="">Seleccione su provincia</option>
                                             <option>Bocas del Toro</option>
-                                            <option>Coclé   </option>
+                                            <option>Coclé</option>
                                             <option>Colón</option>
                                             <option>Chiriquí</option>
                                             <option>Darién</option>
@@ -138,14 +144,14 @@
                         </div>
         
                               
-                                    <div class="lg:col-span-2">
+                                    <div class="col-span-2">
                                         <input type="checkbox" class="m-0"  id="politica">
                                         <label class="font-normal"  for="politica">He leído y acepto la <a href="" class="underline text-[#0d6efd] hover:text-[#0a58ca]">política de privacidad</a></label>
                                     </div>
                                 
                                 
 
-                                <div class="lg:col-span-2" data-netlify-recaptcha="true"></div>
+                                <div class="col-span-2" data-netlify-recaptcha="true"></div>
                              
                                 <div class="mt-4">
                                     <button
@@ -160,247 +166,11 @@
                                     </button>
                                 </div>
 
-                   
-
-                 
-
-
                     </div>
 
                   
                 </form>
             </section>
-
-<!-- OLD -->
-            <!-- <section>
-                <div class="w-full mx-auto  flex justify-center">
-                    <div >
-                        <h4 class="font-medium mt-0 mb-2 text-lg xl:text-2xl">Su dirección</h4>
-
-                        <form class="needs-validation"
-                         name="contact"
-                         action="#"
-                         method="post"
-                         novalidate
-                         netlify
-                         data-netlify-recaptcha="true">
-
-                            <fieldset class="border-0 m-0 min-w-0 p-0" >
-                                <div class="flex flex-wrap" >
-                                    <div class="mb-4 max-w-full w-full md:flex-none" >
-                                        <label for="firstName">Nombre</label>
-                                        <input type="text"  id="firstName" placeholder="Escriba su nombre">
-                                    </div>
-                                    <div class="mb-4 max-w-full w-full md:flex-none">
-                                        <label for="lastName">Apellidos</label>
-                                        <input type="text"  id="lastName" placeholder="Escriba sus apellidos">
-                                    </div>
-                                </div>
-        
-                                <div class="flex flex-wrap" >
-                                
-                                
-                                <div class="mb-4 max-w-full w-full md:flex-none">
-                                    <label for="email">Email</label>
-                                    <div >
-                                        <div >
-                                            <span >@</span>
-                                        </div>
-                                        <input type="text"  id="email" placeholder="Email" >
-                                    </div>
-                                </div>
-        
-                                    <div class="mb-4 max-w-full w-full md:flex-none">
-                                        <label for="telefono">Teléfono</span></label>
-                                        <input type="tel"  id="telefono" placeholder="Teléfono" >
-                                    </div>
-        
-                                </div>
-        
-                            
-        
-                                <div class="mb-4" >
-                                    <label for="address">Dirección</label>
-                                    <input type="text"  id="address"  >
-                                </div>
-        
-                                <div  class="flex flex-wrap">
-                                
-                                    <div class="mb-4 max-w-full w-full md:flex-none" >
-                                        <label for="provincia">Provincia</label>
-                                        <select  id="provincia" class="w-full border-gray-300 rounded-lg shadow-sm focus:border-indigo-500 focus:ring-indigo-500;" >
-                                            <option value="">Seleccione su provincia</option>
-                                            <option>Bocas del Toro</option>
-                                            <option>Coclé   </option>
-                                            <option>Colón</option>
-                                            <option>Chiriquí</option>
-                                            <option>Darién</option>
-                                            <option>Herrera</option>
-                                            <option>Los Santos</option>
-                                            <option>Panamá</option>
-                                            <option>Veraguas</option>
-                                            <option>Panamá Oeste</option>
-                                        </select>
-                                    </div>
-        
-                                    <div class="mb-4 max-w-full w-full md:flex-none">
-                                        <label for="city">Ciudad</span></label>
-                                        <input type="text" class="w-full border-gray-300 rounded-lg shadow-sm focus:border-indigo-500 focus:ring-indigo-500;" id="city" placeholder="Ciudad" >
-                                    </div>
-        
-                                </div>
-        
-        
-                                
-        
-                                <div class="mb-4" >
-                                    <div >
-                                        <label for="remarks">Comentarios</label>
-                                        <textarea  id="remarks" rows="3"></textarea>
-                                    </div>
-                                </div>
-        
-                                <div >
-                                    <div >
-                                        <input type="checkbox"  id="politica">
-                                        <label  for="politica">He leído y acepto la <a href="">política de privacidad</a></label>
-                                    </div>
-                                
-                                </div>
-
-                                <div data-netlify-recaptcha="true"></div>
-                                <button type="submit">Enviar</button>
-                                
-                            </fieldset>
-                    
-                        </form>
-                
-                </div>
-                </div>
-              </section> -->
-
-            <!-- bloque - 3 TailwindLabs         -->
-            <!-- <section>
-                <div
-                    class="min-h-screen bg-gray-100 flex flex-col justify-center py-12 px-6 lg:px-8"
-                >
-                    <div class="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
-                        <div
-                            class="bg-white py-8 px-6 shadow rounded-lg sm:px-10"
-                        >
-                            <form
-                                class="mb-0 space-y-6"
-                                action="#"
-                                method="POST"
-                            >
-                                <div>
-                                    <label
-                                        for="email"
-                                        class="block text-sm font-medium text-gray-700"
-                                        >Email address</label
-                                    >
-                                    <div class="mt-1">
-                                        <input
-                                            id="email"
-                                            name="email"
-                                            type="email"
-                                            autocomplete="email"
-                                            required
-                                            class=""
-                                        />
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <label
-                                        for="password"
-                                        class="block text-sm font-medium text-gray-700"
-                                        >Password</label
-                                    >
-                                    <div class="mt-1">
-                                        <input
-                                            id="password"
-                                            name="password"
-                                            type="password"
-                                            autocomplete="current-password"
-                                            required
-                                            class=""
-                                        />
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <label
-                                        for="company-size"
-                                        class="block text-sm font-medium text-gray-700"
-                                        >Company size</label
-                                    >
-                                    <div class="mt-1">
-                                        <select
-                                            name="company-size"
-                                            id="company-size"
-                                            class=""
-                                        >
-                                            <option value="">
-                                                Please select
-                                            </option>
-                                            <option value="small">
-                                                1 to 10 employees
-                                            </option>
-                                            <option value="medium">
-                                                11 to 50 employees
-                                            </option>
-                                            <option value="large">
-                                                50+ employees
-                                            </option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <div class="flex items-center">
-                                    <input
-                                        id="terms-and-privacy"
-                                        name="terms-and-privacy"
-                                        type="checkbox"
-                                        class=""
-                                    />
-                                    <label
-                                        for="terms-and-privacy"
-                                        class="ml-2 block text-sm text-gray-900"
-                                        >I agree to the
-                                        <a
-                                            href="#"
-                                            class="text-indigo-600 hover:text-indigo-500"
-                                            >Terms</a
-                                        >
-                                        and
-                                        <a
-                                            href="#"
-                                            class="text-indigo-600 hover:text-indigo-500"
-                                            >Privacy Policy</a
-                                        >.
-                                    </label>
-                                </div>
-
-                                <div>
-                                    <button
-                                        type="submit"
-                                        class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-                                    >
-                                        Sign up
-                                    </button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </section> -->
-
-        
-
-
-
- 
 
 
         </main>
