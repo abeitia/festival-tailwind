@@ -40,3 +40,15 @@
 .heading {
   @apply bg-white mt-3 mb-2  leading-[1.2] font-medium   text-center text-[calc(1.375rem+1.5vw)] rounded-[2rem];
 }
+
+.liga {
+  @apply block text-xl mt-4 lg:inline-block lg:mt-0 hover:text-accent;
+}
+
+.brand {
+  @apply bg-brand text-primary font-sans;
+}
+
+.input-style {
+  @apply block w-full px-4 py-2 mt-2 text-dark bg-white border border-[#ced4da]  rounded-md focus:border-[#86b7fe] focus:ring-[#86b7fe] focus:outline-none focus:ring;
+}
