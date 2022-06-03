@@ -1,13 +1,17 @@
-<nav class="flex items-center justify-between flex-wrap bg-light p-6 sticky top-0 z-50">
-    <div class="flex items-center flex-shrink-0 text-black mr-6">
-        <img
-            class="fill-current h-8 w-8 mr-2"
-            src="./assets/images/logo7.png"
-            alt=""
-        />
-        <span class="font-semibold text-xl tracking-tight"
-            >Festival de Mayo</span
-        >
+<nav
+    class="flex items-center justify-between flex-wrap bg-light p-6 sticky top-0 z-50"
+>
+    <div>
+        <a class="flex items-center flex-shrink-0 text-black ml-6" href="index.html">
+            <img
+                class="inline"
+                src="./assets/images/logo7.png"
+                width="32"
+                height="32"
+                title="Logo del Festival de Mayo"
+                alt="Logo"
+            /><span class="pl-2 text-xl">Festival de mayo</span>
+        </a>
     </div>
 
     <div class="block lg:hidden">
@@ -16,35 +20,27 @@
             class="inline-flex items-center justify-center p-2 border rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
             aria-controls="mobile-menu"
         >
-            <!-- <svg
-                class="fill-current h-6 w-6"
-                viewBox="0 0 20 20"
+            <svg
+                class="block h-6 w-6"
                 xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                aria-hidden="true"
             >
-                <title>Menu</title>
-                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-            </svg> -->
-                <svg
-                    class="block h-6 w-6"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="2"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                >
-                    <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M4 6h16M4 12h16M4 18h16"
-                    />
-                </svg>
+                <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M4 6h16M4 12h16M4 18h16"
+                />
+            </svg>
         </button>
     </div>
 
     <div
         id="menu"
-        class="w-full block flex-grow lg:flex lg:items-center lg:w-auto"
+        class="w-full block  lg:flex  lg:items-center lg:w-auto mr-6"
     >
         <div id="mobile-menu" class="text-sm lg:flex-grow">
             <a
@@ -61,7 +57,8 @@
             >
 
             <a
-                 role="link" aria-disabled="true"
+                role="link"
+                aria-disabled="true"
                 class="block text-xl mt-4 lg:inline-block lg:mt-0 text-gray-300 hover:text-accent mr-4"
                 >Artículo</a
             >

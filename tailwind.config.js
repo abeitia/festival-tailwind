@@ -10,8 +10,8 @@ module.exports = {
             },
 fontFamily : {
   'serif'    : ['Merriweather', ...defaultTheme.fontFamily.serif ],
-//  serif    : ["'Merriweather'", ...defaultTheme.fontFamily.serif ],
-  Merriweather: "'Merriweather', serif"
+  'sans'    : ['"Open Sans"', ...defaultTheme.fontFamily.sans ],
+
 }
 }, 
   },

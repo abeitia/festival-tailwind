@@ -33,6 +33,10 @@
  */
 @tailwind utilities;
 
-.card{
+.card {
   @apply rounded bg-white border-gray-200 shadow-md overflow-hidden relative;
+}
+
+.heading {
+  @apply bg-white mt-3 mb-2  leading-[1.2] font-medium   text-center text-[calc(1.375rem+1.5vw)] rounded-[2rem];
 }
